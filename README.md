@@ -13,23 +13,14 @@ A classe *Dragon* herda os métodos e atributos da class Monster e apenas implem
 A classe *Character* implementa a interface Fighter, que também implementa a interface SimpleFighter. *Character* define como será a criação de um personagem do mundo RPG, possuindo nome, uma raça e um arquétipo, que podem ser passados por parâmetro ou não (caso não seja, será criado um mago, de raça élfica por padrão).
 
 ## `Archetypes` <>
-1.  Ao utilizá-lo com o método <strong>POST</strong>, pode-se criar uma nova categoria para ser adicionada em um post do blog.
+A class *Archetype* possui originalmente 4 tipos, Mage, Necromancer, Ranger e Warrior, cada uma possui um especial específico e um tipo de energia.
+Para Mage e Necromancer é consumido *mana*, enquanto para Ranger e Warrior, *stamina*.
 
-2. Ao utilizá-lo com o método <strong>GET</strong>, pode-se ter acesso a todas as categorias existentes no banco de dados.
-
-## `Fight` <>
-1.  Ao utilizá-lo com o método <strong>POST</strong>, pode-se criar uma nova categoria para ser adicionada em um post do blog.
-
-2. Ao utilizá-lo com o método <strong>GET</strong>, pode-se ter acesso a todas as categorias existentes no banco de dados.
+## `Battles` <>
+A classe Battles implementa a lógica de combate do RPG, podendo haver PVP (player vs player) e PVE (player vs environment).
 
 ## `Race` <>
-1. Ao utilizá-lo com o método <strong>POST</strong>, pode-se criar um novo post, com título (title) e conteúdo (content).
-
-2. Ao utilizá-lo com o método <strong>GET</strong>, pode-se ter acesso a todas os posts existentes no banco de dados. É possível também optar pelo uso um id, no caso de se desejar apenas um post específico, ou ainda usar uma query para buscar um post por meio do título ou do conteúdo de um post por meio da extensão do endpoint `/search?q`.
-
-3. Caso desejar, pode-se modificar um post já existente com o método <strong>PUT</strong>.
-
-4. Em última instância, caso desejar, pode-se deletar um post por meio do método <strong>DELETE</strong>.
+A classe Race determina a que raça pertence o personagem, podendo ser Dwarf, Elf, Halfling ou Orc, cada um com atributos de vida já definifos por padrão.
 
 ## 🛠️ tecnologias e frameworks utilizados
 * [Typescript](http://expressjs.com/);
@@ -40,7 +31,6 @@ Este projeto foi realizado por mim, [Patrick Gomes](https://www.linkedin.com/in/
 ## 🎁 Honras
 
 * Agradeço primeiramente a Deus;
-* É o primeiro projeto que fiz com a implementação do JWT com foco na segurança da aplicação;
 * Agradeço à Instituição [Trybe](https://www.betrybe.com/) pelo estímulao diário a melhorar 🫂;
 * Dediquei-me como sempre faço a este trabalho e espero que tenham gostado. A evolução é constante!
 * Colossenses 3:23;
